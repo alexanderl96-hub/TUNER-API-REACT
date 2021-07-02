@@ -8,6 +8,11 @@ export default function NavBar() {
                 <h1>Songs</h1>
                 <Link to="/songs">Play me</Link>
             </h2>
+            <form className="form">
+                <input className="input" placeholder="🔍..."></input>
+                <button className="inputBtn">Search</button>
+            </form>
+            <button className="button">New Music</button>
         </div>
     )
 }

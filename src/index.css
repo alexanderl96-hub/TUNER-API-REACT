@@ -11,18 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.titulos{
-  margin-left: -110px;
+.navBar{
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: -60px;
+  word-wrap: break-word;
+  
+}
+.form{
+  
+}
+.input{
+  width: 400px;
+  font-size: 20px;
+  margin-top: 110px;
+}
+.inputBtn{
+  font-size: 20px;
+  margin-left: -73px;
+}
+.button{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  margin-top: 110px;
+}
+.index{
+  background-color: black;
+}
+.titulos{
+  margin-left: -10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  color: white;
 }
 .table{
   text-align: center;
-  margin-left: 340px;
-  /* background-color: aquamarine; */
+  margin-left: 25px;
+  font-size: 20px;
 } 
 .box{
-  border: 1px solid black;
-  width: 290px;
+  width: 390px;
+  color: white;
+}
+.color{
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 100%;
 }

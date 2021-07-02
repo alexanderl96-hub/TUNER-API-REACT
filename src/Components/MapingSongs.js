@@ -5,6 +5,7 @@ export default function MapingSongs({ song, index}) {
         <div>
             
             <tr className="color">
+                <div className="color">
                 <td  className="box" >
                     <p className="income" >
                     { song.is_favorite? (<span>⭐️</span> ) 
@@ -24,6 +25,8 @@ export default function MapingSongs({ song, index}) {
                 <td className="box" >
                     <p ><strong> By: {song.artist}</strong></p>
                 </td>
+                </div>
+                
             </tr>
         </div>
     )
