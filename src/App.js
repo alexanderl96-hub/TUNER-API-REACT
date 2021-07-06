@@ -38,10 +38,10 @@ function App() {
              <Route exact path ="/songs/new">
                <New />
              </Route>
-             <Route exact path ="/songs/:index/">
-               <Show/>
+             <Route exact path ="/songs/:id/">
+               <Show  song={songs}/>
              </Route>
-             <Route exact path ="/songs/:index/edit">
+             <Route exact path ="/songs/:id/edit">
                <Edit/>
              </Route>
              <Route exact path ="*">

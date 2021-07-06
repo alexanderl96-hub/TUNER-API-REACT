@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function MapingSongs({ song, index}) {
+export default function MapingSongs({ song, id}) {
     return (
         <div>
             
@@ -20,7 +20,7 @@ export default function MapingSongs({ song, index}) {
                     </p>
                 </td>
                 <td className="box" >
-                    <Link to={`/songs/${index}`}>{song.album}</Link>
+                    <Link to={`/songs/${id}`}>{song.album}</Link>
                 </td>
                 <td className="box" >
                     <p ><strong> By: {song.artist}</strong></p>
