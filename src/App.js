@@ -17,6 +17,33 @@ const API_DTBASE = apiURL()
 function App() {
   const [songs, setSongs]= useState([])
 
+  const addSongs = (newSong)=>{
+    axios.pot(`${API_DTBASE}/songs`, newSong).then((res)=>{
+      return axios.get(`${API_DTBASE}/songs`).then((res)=>{
+        setSongs(res.data)
+      }).catch((e)=>{
+        console.log(e)
+      })
+    })
+  }
+  
+  const updateSongs = (newSong, id)=>{
+    axios.put(`${API_DTBASE}/songs/${id}`, newSong).then((res)=>{
+      const newt = [...songs]
+      newt[id]= newSong
+      setSongs(newt)
+    }, (error) => console.log(error)
+    )
+    .catch((e)=> console.warm("cacth", e))
+  }
+
+  const deleteSongs = (id)=>{
+    axios.delete(`${API_DTBASE}/songs/${id}`).then((res)=>{
+      const del = [...songs]
+      del.splice(id, 1)
+      setSongs(del)
+    }, (error) => console.log(error))
+  }
   useEffect(()=>{
     axios.get(`${API_DTBASE}/songs`).then((res)=>{
       const {data} = res
@@ -36,13 +63,13 @@ function App() {
                <Index  songs={songs}/>
              </Route>
              <Route exact path ="/songs/new">
-               <New />
+               <New  addSongs={addSongs}/>
              </Route>
              <Route exact path ="/songs/:id/">
-               <Show  song={songs}/>
+               <Show  song={songs} deleteSongs={deleteSongs}/>
              </Route>
              <Route exact path ="/songs/:id/edit">
-               <Edit/>
+               <Edit song={songs} updateSongs={updateSongs}/>
              </Route>
              <Route exact path ="*">
                <Four0Four/>
