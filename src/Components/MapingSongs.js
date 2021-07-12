@@ -23,7 +23,7 @@ export default function MapingSongs({ song, id}) {
                     <Link to={`/songs/${id}`}>{song.album}</Link>
                 </td>
                 <td className="box" >
-                    <p ><strong> By: {song.artist}</strong></p>
+                    <p ><strong> {song.artist}</strong></p>
                 </td>
                 </div>
                 

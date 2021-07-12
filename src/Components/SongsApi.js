@@ -33,7 +33,7 @@ const API_DTBASE = apiURL()
                     <h3>{songs.artist}</h3>
                     <h3>{songs.album}</h3>
                     <h3>{songs.time}</h3>
-                    <h3>{songs.url}</h3>
+                    <a href={songs.url}>{songs.url}</a>
                     <h3>{songs.is_favorite}</h3>
                 </div>
                 
