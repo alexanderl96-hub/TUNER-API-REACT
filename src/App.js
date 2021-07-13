@@ -18,7 +18,7 @@ function App() {
   const [songs, setSongs]= useState([])
 
   const addSongs = (newSong)=>{
-    axios.pot(`${API_DTBASE}/songs`, newSong).then((res)=>{
+    axios.post(`${API_DTBASE}/songs`, newSong).then((res)=>{
       return axios.get(`${API_DTBASE}/songs`).then((res)=>{
         setSongs(res.data)
       }).catch((e)=>{
@@ -49,7 +49,7 @@ function App() {
       const {data} = res
       setSongs(data)
     })
-  })
+  },[])
   return (
     <div className="App">
       <Router>
@@ -65,7 +65,7 @@ function App() {
              <Route exact path ="/songs/new">
                <New  addSongs={addSongs}/>
              </Route>
-             <Route exact path ="/songs/:id/">
+             <Route exact path ="/songs/:id">
                <Show  song={songs} deleteSongs={deleteSongs}/>
              </Route>
              <Route exact path ="/songs/:id/edit">

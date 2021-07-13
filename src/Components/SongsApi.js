@@ -29,12 +29,13 @@ const API_DTBASE = apiURL()
                     </Link>
                 </div>
                 <div>
+                    <img src={songs.photo} alt="my-pho" className="coverimg"/>
                     <h3>{songs.name}</h3>
-                    <h3>{songs.artist}</h3>
-                    <h3>{songs.album}</h3>
+                    <h3>Favorite: {songs.is_favorite ? (<span>❤️</span> ) : (<span>🤍</span> )}</h3>
+                    <h3> Artist: {songs.artist}</h3>
+                    <h3> Album: {songs.album}</h3>
                     <h3>{songs.time}</h3>
                     <a href={songs.url}>{songs.url}</a>
-                    <h3>{songs.is_favorite}</h3>
                 </div>
                 
 

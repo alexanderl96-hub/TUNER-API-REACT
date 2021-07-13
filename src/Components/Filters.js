@@ -1,6 +1,7 @@
 import MapingSongs from "./MapingSongs"
 
 export default function Filters({songs, id}) {
+    console.log(songs)
     return (
         <div className="table">
             <h3>Todas mis canciones</h3>
@@ -13,7 +14,7 @@ export default function Filters({songs, id}) {
                 </td>
                 <tbody>
                     {songs.map((song, index)=>{
-                        return <MapingSongs key={id} song={song} id={index}/>
+                        return <MapingSongs key={id} song={song} id={song.id}/>
                     })}
                 </tbody>
             </section>
