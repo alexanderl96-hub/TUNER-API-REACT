@@ -12,7 +12,10 @@ export default function NavBar() {
                 <input className="input" placeholder="🔍..."></input>
                 <button className="inputBtn">Search</button>
             </form>
-            <button className="button">New Music</button>
+            <Link to="/songs/new">
+               <button className="button">New Music</button>
+            </Link>
+            
         </div>
     )
 }
