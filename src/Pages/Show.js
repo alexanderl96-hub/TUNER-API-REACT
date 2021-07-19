@@ -7,8 +7,7 @@ export default function Show({song}) {
     const {id} = useParams()
     const [songs] = useState(song[id])
     return (
-        <div>
-            <h2>Show</h2>
+        <div className="show">
             <section>
                 <SongsApi songs={songs} id={id} />
             </section>

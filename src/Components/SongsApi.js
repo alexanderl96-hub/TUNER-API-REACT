@@ -22,24 +22,29 @@ const API_DTBASE = apiURL()
     })
     return (
         <div>
-            <article>
-                <div>
-                    <Link to={`/songs`}>
-                        <button>Back</button>
-                    </Link>
-                </div>
-                <div>
-                    <img src={songs.photo} alt="my-pho" className="coverimg"/>
-                    <h3>{songs.name}</h3>
-                    <h3>Favorite: {songs.is_favorite ? (<span>❤️</span> ) : (<span>🤍</span> )}</h3>
-                    <h3> Artist: {songs.artist}</h3>
-                    <h3> Album: {songs.album}</h3>
-                    <h3>{songs.time}</h3>
-                    <a href={songs.url}>{songs.url}</a>
-                </div>
-                
+            <div>
+                <Link to={`/songs`}>
+                    <button className="songsbt">Back</button>
+                </Link>
+                <Link to={`/songs/${id}/edit`}>
+                    <button className="songsbt">Edit</button>
+                </Link>
+                <Link to={`/songs`}>
+                    <button className="songsbt">Delete</button>
+                </Link>
 
-            </article>
+            </div>
+            <div className="imgname">
+                <img src={songs.photo} alt="my-pho" className="coverimg"/>
+                <h2>{songs.name}</h2>
+                <a href={songs.url}><h3>{songs.url}</h3></a>
+            </div>
+            <div className="details">
+                <h2> Artist: {songs.artist}</h2>
+                <h2> Album: {songs.album}</h2>
+                <h2> Time: {songs.time}</h2>
+                <h2>Favorite: {songs.is_favorite ? (<span>❤️</span> ) : (<span>🤍</span> )}</h2>
+            </div>
         </div>
     )
 }
