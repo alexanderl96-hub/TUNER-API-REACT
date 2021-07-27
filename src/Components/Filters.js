@@ -13,7 +13,7 @@ export default function Filters({songs, id}) {
                     <h2>Artist's</h2>
                 </td>
                 <tbody>
-                    {songs.map((song, index)=>{
+                    {songs.map((song )=>{
                         return <MapingSongs key={id} song={song} id={song.id}/>
                     })}
                 </tbody>

@@ -20,13 +20,35 @@ code {
   word-wrap: break-word;
   
 }
-.form{
-  
+/* .form{
+  background-color: rgba(224, 214, 214, 0.555);
+  border: 1px solid rgba(224, 214, 214, 0.555);
+  height: 50px;
+  opacity: 3.5;
+} */
+.home_btn{
+  margin: auto;
+  height: 60px;
+  width: 400px;
+  font-weight: 600;
+  font-size: 40px;
+  background-color: rgb(42, 228, 98);
+  border-radius: 8px;
+  color: white;
+  margin-top: 250px;
+}
+.playlist{
+  float: left;
+  color: white;
+}
+.filters{
+  float:right;
 }
 .songsbt{
   margin-top: 13px;
   font-size: 15px;
   width: 70px;
+
 }
 .songsbt:hover{
   transform: scale(1.2);
@@ -52,13 +74,20 @@ code {
   color: white;
 }
 .input{
-  width: 400px;
+  width: 350px;
   font-size: 20px;
   margin-top: 110px;
+  margin-left: 10px;
 }
+/* .input:hover{
+  background-color: rgba(224, 214, 214, 0.555);
+  border: 1px solid rgba(224, 214, 214, 0.555);
+  height: 50px;
+  opacity: 3.5;
+} */
 .inputBtn{
   font-size: 20px;
-  margin-left: -73px;
+  margin-left: -4px;
 }
 .button{
   height: 30px;
@@ -70,7 +99,7 @@ code {
   background-color: black;
 }
 .titulos{
-  margin-left: -10px;
+  margin-left: 400px;
   display: flex;
   flex-direction: row;
   justify-content:space-around;
@@ -80,15 +109,40 @@ code {
   text-align: center;
   margin-left: 25px;
   font-size: 20px;
+ 
 } 
+.library{
+  font-size: 30px;
+  margin-left: -220px;
+  color: white;
+  
+}
+.library2{
+  font-size: 30px;
+  color: white;
+  margin-left: -220px;
+  
+}
+.librarylink{
+  text-decoration: none;
+}
 .box{
   width: 390px;
   color: white;
 }
+.plus{
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: rgb(118, 118, 230);
+  margin-top:10px;
+  margin-left: 20px;
+}
 .color{
   border: 1px solid white;
   border-radius: 10px;
-  width: 100%;
+  width: 95%;
+  margin-left: 50px;
 }
 .show{
   background-color: black;
