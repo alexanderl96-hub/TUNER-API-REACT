@@ -99,7 +99,7 @@ code {
   background-color: black;
 }
 .titulos{
-  margin-left: 400px;
+  margin-left: 460px;
   display: flex;
   flex-direction: row;
   justify-content:space-around;
@@ -129,6 +129,7 @@ code {
 .box{
   width: 390px;
   color: white;
+  height: 100px;
 }
 .plus{
   height: 50px;
@@ -140,11 +141,22 @@ code {
 }
 .color{
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 30px;
   width: 95%;
+  margin: 5px;
   margin-left: 50px;
 }
 .show{
   background-color: black;
   height: 640px;
+}
+.player{
+  color: black;
+}
+.maping{
+  text-decoration: none;
+}
+.create{
+  display: flex;
+  flex-direction: row;
 }

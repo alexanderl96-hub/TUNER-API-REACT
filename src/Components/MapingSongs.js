@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from "react-router-dom"
 
 export default function MapingSongs({ song, id}) {
@@ -6,8 +7,10 @@ export default function MapingSongs({ song, id}) {
             
             <tr className="color">
                 <div className="color">
+                <Link to={`/songs/${id}`} className="maping">   
                 <td  className="box" >
                     <p className="income" >
+                   
                     { song.is_favorite? (<span>⭐️</span> ) 
                     : 
                     (<span>&nbsp; &nbsp; &nbsp;</span>)
@@ -20,11 +23,12 @@ export default function MapingSongs({ song, id}) {
                     </p>
                 </td>
                 <td className="box" >
-                    <Link to={`/songs/${id}`}>{song.album}</Link>
+                   {song.album}
                 </td>
                 <td className="box" >
                     <p ><strong> {song.artist}</strong></p>
                 </td>
+                </Link>
                 </div>
                 
             </tr>

@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from "react";
 import {Link, useParams, useHistory, withRouter } from "react-router-dom"
 import axios from "axios"
@@ -6,11 +7,16 @@ import { apiURL } from "../Back-end/apiURl";
 
 const API_DTBASE = apiURL()
 
- function SongsApi() {
-
+ function SongsApi(props) {
+    const {deleteSongs} = props
     const [ songs, setSongs ] = useState([])
-    let {id} = useParams()
+    let { id } = useParams()
     let history = useHistory()
+
+    const handleDelete = () => {
+        deleteSongs(id);
+        // history.push("/songs");
+    };
 
     useEffect(()=>{
         axios.get(`${API_DTBASE}/songs/${id}`).then((res)=>{
@@ -19,7 +25,10 @@ const API_DTBASE = apiURL()
         }).catch((e)=>{
             history.push('/not-found')
         })
-    })
+    },[id, history])
+
+
+
     return (
         <div>
             <div>
@@ -30,14 +39,15 @@ const API_DTBASE = apiURL()
                     <button className="songsbt">Edit</button>
                 </Link>
                 <Link to={`/songs`}>
-                    <button className="songsbt">Delete</button>
+                    <button onClick={handleDelete} className="songsbt">Delete</button>
                 </Link>
 
             </div>
             <div className="imgname">
                 <img src={songs.photo} alt="my-pho" className="coverimg"/>
                 <h2>{songs.name}</h2>
-                <a href={songs.url}><h3>{songs.url}</h3></a>
+                <Link to={`/songs/${id}/play`}><a href={songs.url}><h3>{songs.url}</h3></a></Link>
+                {/* <a href={songs.url}><h3>{songs.url}</h3></a> */}
             </div>
             <div className="details">
                 <h2> Artist: {songs.artist}</h2>

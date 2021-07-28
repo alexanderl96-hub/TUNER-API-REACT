@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import axios from "axios";
@@ -10,13 +11,14 @@ import Index from "./Pages/Index"
 import New from "./Pages/New"
 import Show from "./Pages/Show"
 import Edit from "./Pages/Edit"
+import Play from "./Pages/Play"
 import Four0Four from "./Pages/Four0Four"
 
 const API_DTBASE = apiURL()
 
 function App() {
   const [songs, setSongs]= useState([])
-
+   
   const addSongs = (newSong)=>{
     axios.post(`${API_DTBASE}/songs`, newSong).then((res)=>{
       return axios.get(`${API_DTBASE}/songs`).then((res)=>{
@@ -47,9 +49,11 @@ function App() {
   useEffect(()=>{
     axios.get(`${API_DTBASE}/songs`).then((res)=>{
       const {data} = res
+      console.log( data)
       setSongs(data)
     })
   },[])
+
   return (
     <div className="App">
       <Router>
@@ -70,6 +74,9 @@ function App() {
              </Route>
              <Route exact path ="/songs/:id/edit">
                <Edit song={songs} updateSongs={updateSongs}/>
+             </Route>
+             <Route exact path ="/songs/:id/play">
+               <Play song={songs} />
              </Route>
              <Route exact path ="*">
                <Four0Four/>

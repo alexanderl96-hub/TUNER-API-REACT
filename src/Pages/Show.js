@@ -9,7 +9,10 @@ export default function Show({song}) {
     return (
         <div className="show">
             <section>
-                <SongsApi songs={songs} id={id} />
+                <SongsApi 
+                  songs={songs} 
+                  id={id} 
+                  key={id}/>
             </section>
         </div>
     )
