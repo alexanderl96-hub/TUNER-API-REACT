@@ -7,15 +7,16 @@ import { apiURL } from "../Back-end/apiURl";
 
 const API_DTBASE = apiURL()
 
- function SongsApi(props) {
-    const {deleteSongs} = props
+ function SongsApi() {
+  
     const [ songs, setSongs ] = useState([])
     let { id } = useParams()
     let history = useHistory()
 
     const handleDelete = () => {
-        deleteSongs(id);
-        // history.push("/songs");
+        axios.delete(`${API_DTBASE}/songs/${id}`).then(() =>{
+            history.push(`/songs`)
+        }, (error) => console.log(error))
     };
 
     useEffect(()=>{
@@ -27,6 +28,7 @@ const API_DTBASE = apiURL()
         })
     },[id, history])
 
+    
 
 
     return (
@@ -46,8 +48,7 @@ const API_DTBASE = apiURL()
             <div className="imgname">
                 <img src={songs.photo} alt="my-pho" className="coverimg"/>
                 <h2>{songs.name}</h2>
-                <Link to={`/songs/${id}/play`}><a href={songs.url}><h3>{songs.url}</h3></a></Link>
-                {/* <a href={songs.url}><h3>{songs.url}</h3></a> */}
+                <Link to={`/songs/${id}/play`} ><a href={songs.url} ><h3 className="playbtn">▶️</h3></a></Link>
             </div>
             <div className="details">
                 <h2> Artist: {songs.artist}</h2>

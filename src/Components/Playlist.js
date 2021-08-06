@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Playlist() {
+export default function Playlist({song}) {
     return (
         <div>
             <div>

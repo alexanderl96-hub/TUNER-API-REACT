@@ -5,15 +5,15 @@ export default function MapingSongs({ song, id}) {
     return (
         <div>
             
-            <tr className="color">
+            <tr >
                 <div className="color">
                 <Link to={`/songs/${id}`} className="maping">   
                 <td  className="box" >
                     <p className="income" >
                    
-                    { song.is_favorite? (<span>⭐️</span> ) 
+                    { song.is_favorite? <span>⭐️</span>  
                     : 
-                    (<span>&nbsp; &nbsp; &nbsp;</span>)
+                    <span>&nbsp; &nbsp; &nbsp;</span>
                     }
                     </p>
                 </td>
@@ -32,6 +32,7 @@ export default function MapingSongs({ song, id}) {
                 </div>
                 
             </tr>
+            
         </div>
     )
 }

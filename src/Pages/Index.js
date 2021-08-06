@@ -10,7 +10,8 @@ export default function Index({songs}) {
         <div className="index">
             <h2>Index</h2>
             <div className="playlist">
-                Playlist
+                <button>Musica </button>
+                <Link to='/songs/video'><button>Video</button></Link>
                 <form className="form">
                     <input className="input" placeholder="🔍..."></input>
                     <button className="inputBtn">Search</button>
@@ -21,7 +22,7 @@ export default function Index({songs}) {
                        <img src={plus} alt="img" className="plus"></img>
                        <p className="library2">Create Playlist</p>
                    </div>
-                    <div>
+                    <div className="create">
                         <img src={plus2} alt="img" className="plus"></img>
                         <p className="library2"> Favorite Songs</p>
                     </div>

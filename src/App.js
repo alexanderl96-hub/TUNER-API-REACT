@@ -13,11 +13,13 @@ import Show from "./Pages/Show"
 import Edit from "./Pages/Edit"
 import Play from "./Pages/Play"
 import Four0Four from "./Pages/Four0Four"
+import Video from "./PageComponents/Videos"
 
 const API_DTBASE = apiURL()
 
 function App() {
   const [songs, setSongs]= useState([])
+  const [video, setVideo] = useState([])
    
   const addSongs = (newSong)=>{
     axios.post(`${API_DTBASE}/songs`, newSong).then((res)=>{
@@ -49,11 +51,19 @@ function App() {
   useEffect(()=>{
     axios.get(`${API_DTBASE}/songs`).then((res)=>{
       const {data} = res
-      console.log( data)
+      console.log(data)
       setSongs(data)
     })
   },[])
+  // useEffect(()=>{
+  //   axios.get(`${API_DTBASE}/video`).then((res)=>{
+  //     const {data} = res
+  //     console.log(data)
+  //     setVideo(data)
+  //   })
+  // },[])
 
+ 
   return (
     <div className="App">
       <Router>
@@ -77,6 +87,9 @@ function App() {
              </Route>
              <Route exact path ="/songs/:id/play">
                <Play song={songs} />
+             </Route>
+             <Route exact path="/video">
+               <Video video={video} />
              </Route>
              <Route exact path ="*">
                <Four0Four/>
