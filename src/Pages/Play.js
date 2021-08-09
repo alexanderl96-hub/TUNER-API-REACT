@@ -1,17 +1,31 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import {Link} from "react-router-dom"
+import {useEffect, useState} from 'react'
+import {Link,useParams } from "react-router-dom"
+import axios from "axios"
+import {apiURL} from "../Back-end/apiURl"
 
+const API_DTBASE = apiURL()
 
-export default function Play({song}) {
-   
+export default function Play() {
+    const {id} = useParams()
+    const [songs, setSong]= useState({})
+
+    useEffect(()=>{
+        axios.get(`${API_DTBASE}/songs/${id}`).then((res)=>{
+            const { data } = res
+            setSong(data.video)
+        })
+    })
+
+  console.log(songs) 
     return (
         <div className="show">
             <Link to={`/songs`}>
                     <button className="songsbt">Back</button>
              </Link>
             <h2 className='player'>Aqui empieza todo</h2>
-            <ReactPlayer url='https://music.youtube.com/watch?v=fYV2zXnvKWs&feature=share' className='player'/>
+            <ReactPlayer url={songs} className='player'/>
         </div>
     )
 }

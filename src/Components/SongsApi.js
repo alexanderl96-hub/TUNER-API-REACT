@@ -47,10 +47,11 @@ const API_DTBASE = apiURL()
             </div>
             <div className="imgname">
                 <img src={songs.photo} alt="my-pho" className="coverimg"/>
-                <h2>{songs.name}</h2>
-                <Link to={`/songs/${id}/play`} ><a href={songs.url} ><h3 className="playbtn">▶️</h3></a></Link>
+                {/* <h2>{songs.name}</h2> */}
+                <Link to={`/songs/${id}/play`} ><a href={songs.mp3} ><h3 className="playbtn">▶️</h3></a></Link>
             </div>
             <div className="details">
+                <h2>Title: {songs.name}</h2>
                 <h2> Artist: {songs.artist}</h2>
                 <h2> Album: {songs.album}</h2>
                 <h2> Time: {songs.time}</h2>

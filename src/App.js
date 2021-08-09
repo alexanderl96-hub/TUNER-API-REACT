@@ -21,15 +21,15 @@ function App() {
   const [songs, setSongs]= useState([])
   const [video, setVideo] = useState([])
    
-  const addSongs = (newSong)=>{
-    axios.post(`${API_DTBASE}/songs`, newSong).then((res)=>{
-      return axios.get(`${API_DTBASE}/songs`).then((res)=>{
-        setSongs(res.data)
-      }).catch((e)=>{
-        console.log(e)
-      })
-    })
-  }
+  // const addSongs = (newSong)=>{
+  //   axios.post(`${API_DTBASE}/songs`, newSong).then((res)=>{
+  //     return axios.get(`${API_DTBASE}/songs`).then((res)=>{
+  //       setSongs(res.data)
+  //     }).catch((e)=>{
+  //       console.log(e)
+  //     })
+  //   })
+  // }
   
   const updateSongs = (newSong, id)=>{
     axios.put(`${API_DTBASE}/songs/${id}`, newSong).then((res)=>{
@@ -77,7 +77,7 @@ function App() {
                <Index  songs={songs}/>
              </Route>
              <Route exact path ="/songs/new">
-               <New  addSongs={addSongs}/>
+               <New  />
              </Route>
              <Route exact path ="/songs/:id">
                <Show  song={songs} deleteSongs={deleteSongs}/>

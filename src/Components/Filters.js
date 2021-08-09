@@ -1,7 +1,7 @@
 import React from 'react'
 import MapingSongs from "./MapingSongs"
 
-export default function Filters({songs, video}) {
+export default function Filters({songs}) {
     return (
         <div className="table">
             <h3>Todas mis canciones</h3>

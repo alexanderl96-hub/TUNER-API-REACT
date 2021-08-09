@@ -65,13 +65,27 @@ code {
   margin-right: 300px;
   color: white;
 }
-.input{
-  width: 350px;
-  font-size: 20px;
-  margin-top: 110px;
-  margin-left: 10px;
+input {
+  display: block;
+  width: 50%;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
-
+button[type="submit"] {
+  width: 70px;
+  font-size: 18px;
+  margin-left: -46%;
+  margin-top: 5px;
+}
+.songs_photo{
+  float: right;
+  margin-right: 15%;
+  margin-top: -370px;
+}
+.photo{
+  border-radius:10px;
+}
 .inputBtn{
   font-size: 20px;
   margin-left: -4px;
@@ -116,7 +130,6 @@ code {
   color: white;
   height: 100px;
 }
-
 .plus{
   height: 50px;
   border: 1px solid white;

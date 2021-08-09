@@ -18,8 +18,9 @@ export default function MapingSongs({ song, id}) {
                     </p>
                 </td>
                 <td  className="box" >
-                    <p >
-                    { song.name ?  song.name :  song.artist}
+                    <p>
+                        {/* { song.name } */}
+                    { song.name ?  song.name : null}
                     </p>
                 </td>
                 <td className="box" >

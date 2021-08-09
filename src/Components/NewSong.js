@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom"
 import axios from "axios";
 import { apiURL } from "../Back-end/apiURl";
-import { Link } from 'react-router-dom'
 
 const API_DTBASE = apiURL()
 
@@ -16,7 +15,7 @@ export default function NewSong() {
         album: '', 
         photo: '',
         time: '',
-        url: '',
+        mp3: '',
         is_favorite: false,
     })
 
@@ -35,14 +34,13 @@ export default function NewSong() {
         axios.post(`${API_DTBASE}/songs`, new_song).then((res)=>{
           history.push('/songs')
         })
-      }
+    }
     
-
-
+console.log(songs,'dfgdfgh')
     return (
         <div>
             <h2>New Song</h2>
-            <form action="" onSubmit={handleSubmit}>
+            <form  onSubmit={handleSubmit}>
                <label htmlFor="name"></label>
                <input id="name" type="text" onChange={handleInput} placeholder="Name..."></input>
                <label htmlFor="artist"></label>
@@ -53,12 +51,15 @@ export default function NewSong() {
                <input id="photo" type="text" onChange={handleInput} placeholder="Link..."></input>
                <label htmlFor="time"></label>
                <input id="time" type="text" onChange={handleInput} placeholder="Time..."></input>
-               <label htmlFor="url"></label>
-               <input id="url" type="text" onChange={handleInput} placeholder="Url..."></input>
+               <label htmlFor="mp3"></label>
+               <input id="mp3" type="text" onChange={handleInput} placeholder="Url..."></input>
                <label htmlFor="is_favorite"></label>
                <input id="is_favorite" type="checkbox" onChange={handleCheck} ></input>
                <button type="submit">New</button>
             </form>
+            <div className="songs_photo">
+                <img src={songs.photo ? songs.photo : null} alt={songs.photo} style={{width:"350px", height:"320px"}}  className="photo"/>
+            </div>
         </div>
     )
 }
