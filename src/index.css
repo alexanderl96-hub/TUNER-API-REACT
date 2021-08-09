@@ -163,6 +163,7 @@ button[type="submit"] {
 }
 .maping{
   text-decoration: none;
+  color: white;
 }
 .create{
   display: flex;

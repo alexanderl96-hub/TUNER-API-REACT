@@ -14,7 +14,7 @@ export default function Play() {
     useEffect(()=>{
         axios.get(`${API_DTBASE}/songs/${id}`).then((res)=>{
             const { data } = res
-            setSong(data.video)
+            setSong(data.mp3)
         })
     })
 

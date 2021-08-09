@@ -21,24 +21,13 @@ function App() {
   const [songs, setSongs]= useState([])
   const [video, setVideo] = useState([])
    
-  // const addSongs = (newSong)=>{
-  //   axios.post(`${API_DTBASE}/songs`, newSong).then((res)=>{
-  //     return axios.get(`${API_DTBASE}/songs`).then((res)=>{
-  //       setSongs(res.data)
-  //     }).catch((e)=>{
-  //       console.log(e)
-  //     })
-  //   })
-  // }
-  
-  const updateSongs = (newSong, id)=>{
-    axios.put(`${API_DTBASE}/songs/${id}`, newSong).then((res)=>{
+  const updatedSong = (updateSong, id)=>{
+    axios.put(`${API_DTBASE}/songs/${id}`, updateSong).then((res)=>{
       const newt = [...songs]
-      newt[id]= newSong
+      newt[id] = updateSong 
       setSongs(newt)
     }, (error) => console.log(error)
-    )
-    .catch((e)=> console.warm("cacth", e))
+    );
   }
 
   const deleteSongs = (id)=>{
@@ -48,10 +37,10 @@ function App() {
       setSongs(del)
     }, (error) => console.log(error))
   }
+
   useEffect(()=>{
     axios.get(`${API_DTBASE}/songs`).then((res)=>{
       const {data} = res
-      console.log(data)
       setSongs(data)
     })
   },[])
@@ -83,7 +72,7 @@ function App() {
                <Show  song={songs} deleteSongs={deleteSongs}/>
              </Route>
              <Route exact path ="/songs/:id/edit">
-               <Edit song={songs} updateSongs={updateSongs}/>
+               <Edit song={songs} updatedSongs={updatedSong}/>
              </Route>
              <Route exact path ="/songs/:id/play">
                <Play song={songs} />
