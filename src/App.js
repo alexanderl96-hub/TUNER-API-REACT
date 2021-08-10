@@ -6,6 +6,7 @@ import {apiURL} from "./Back-end/apiURl"
 import './App.css';
 
 import NavBar from "./Components/NavBar"
+
 import Home from "./Pages/Home"
 import Index from "./Pages/Index"
 import New from "./Pages/New"
@@ -13,6 +14,9 @@ import Show from "./Pages/Show"
 import Edit from "./Pages/Edit"
 import Play from "./Pages/Play"
 import Four0Four from "./Pages/Four0Four"
+import Library from "./Pages/Library"
+import Lyric from "./Pages/Lyric"
+
 import Video from "./PageComponents/Videos"
 
 const API_DTBASE = apiURL()
@@ -76,6 +80,12 @@ function App() {
              </Route>
              <Route exact path ="/songs/:id/play">
                <Play song={songs} />
+             </Route>
+             <Route exact path ="/library">
+               <Library song={songs} />
+             </Route>
+             <Route exact path ="/lyrics">
+               <Lyric song={songs} />
              </Route>
              <Route exact path="/video">
                <Video video={video} />

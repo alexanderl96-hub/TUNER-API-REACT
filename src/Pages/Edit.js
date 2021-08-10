@@ -4,8 +4,7 @@ import EditSongs from "../Components/EditSongs";
 export default function Edit({ song, updatedSongs }) {
   return (
     <div>
-      <h1>Edit</h1>
-      <EditSongs songs={song} updateSongs={updatedSongs} />
+      <EditSongs songs={song} updatedSongs={updatedSongs} />
     </div>
   );
 }

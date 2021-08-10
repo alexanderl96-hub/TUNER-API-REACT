@@ -42,20 +42,20 @@ console.log(songs,'dfgdfgh')
             <h2>New Song</h2>
             <form  onSubmit={handleSubmit}>
                <label htmlFor="name"></label>
-               <input id="name" type="text" onChange={handleInput} placeholder="Name..."></input>
+               <input id="name" type="text" onChange={handleInput} placeholder="Name..." className="editform"></input>
                <label htmlFor="artist"></label>
-               <input id="artist" type="text" onChange={handleInput} placeholder="Artist..."></input>
+               <input id="artist" type="text" onChange={handleInput} placeholder="Artist..." className="editform"></input>
                <label htmlFor="album"></label>
-               <input id="album" type="text" onChange={handleInput} placeholder="Album..."></input>
+               <input id="album" type="text" onChange={handleInput} placeholder="Album..." className="editform"></input>
                <label htmlFor="photo"></label>
-               <input id="photo" type="text" onChange={handleInput} placeholder="Link..."></input>
+               <input id="photo" type="text" onChange={handleInput} placeholder="Link..." className="editform"></input>
                <label htmlFor="time"></label>
-               <input id="time" type="text" onChange={handleInput} placeholder="Time..."></input>
+               <input id="time" type="text" onChange={handleInput} placeholder="Time..." className="editform"></input>
                <label htmlFor="mp3"></label>
-               <input id="mp3" type="text" onChange={handleInput} placeholder="Url..."></input>
+               <input id="mp3" type="text" onChange={handleInput} placeholder="Mp3..." className="editform"></input>
                <label htmlFor="is_favorite"></label>
-               <input id="is_favorite" type="checkbox" onChange={handleCheck} ></input>
-               <button type="submit">New</button>
+               <input id="is_favorite" type="checkbox" onChange={handleCheck} className="editform"></input>
+               <button type="submit" className="editformbt">New</button>
             </form>
             <div className="songs_photo">
                 <img src={songs.photo ? songs.photo : null} alt={songs.photo} style={{width:"350px", height:"320px"}}  className="photo"/>

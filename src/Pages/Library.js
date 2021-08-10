@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Video from "../ComponentesVideo/Video";
+import {Link} from "react-router-dom"
+import MapingLibrary from "../Library Component/MapingLibrary";
 
-export default function Videos({ video }) {
+
+export default function Library({ song }) {
   return (
     <div>
       <Link to={`/songs`} className="Mus-Vid">
@@ -14,8 +15,10 @@ export default function Videos({ video }) {
       <Link to={`/lyrics`} className="Mus-Vid">
         <button className="Mus-Vid">Lyrics</button>
       </Link>
-      <h1>Video</h1>
-      <Video video={video} />
+      <h2>Library</h2>
+      {song.map((songs) => {
+        return <MapingLibrary song={songs} id={songs.id} key={songs.id} />;
+      })}
     </div>
   );
 }

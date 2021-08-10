@@ -32,7 +32,7 @@ export default function EditSongs(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.updateSongs(songs, id);
+    props.updatedSongs(songs, id);
     history.push("/songs");
   };
 
@@ -62,6 +62,7 @@ export default function EditSongs(props) {
               type="text"
               onChange={handleInput}
               value={songs.name}
+              className="editform"
             ></input>
             <label htmlFor="artist">Artist:</label>
             <input
@@ -69,6 +70,7 @@ export default function EditSongs(props) {
               type="text"
               onChange={handleInput}
               value={songs.artist}
+              className="editform"
             ></input>
             <label htmlFor="album">Album:</label>
             <input
@@ -76,6 +78,7 @@ export default function EditSongs(props) {
               type="text"
               onChange={handleInput}
               value={songs.album}
+              className="editform"
             ></input>
             <label htmlFor="photo">Photo:</label>
             <input
@@ -83,6 +86,7 @@ export default function EditSongs(props) {
               type="text"
               onChange={handleInput}
               value={songs.photo}
+              className="editform"
             ></input>
             <label htmlFor="time">Time:</label>
             <input
@@ -90,6 +94,7 @@ export default function EditSongs(props) {
               type="text"
               onChange={handleInput}
               value={songs.time}
+              className="editform"
             ></input>
             <label htmlFor="mp3">Mp3:</label>
             <input
@@ -97,6 +102,7 @@ export default function EditSongs(props) {
               type="text"
               onChange={handleInput}
               value={songs.mp3}
+              className="editform"
             ></input>
             <label htmlFor="is_favorite">Favorite:</label>
             <input
@@ -104,8 +110,9 @@ export default function EditSongs(props) {
               type="checkbox"
               onChange={handleCheck}
               value={songs.is_favorite}
+              className="editform"
             ></input>
-            <button type="submit">New</button>
+            <button type="submit" className="editformbt">New</button>
           </form>
           <div className="songs_photo">
             <img
