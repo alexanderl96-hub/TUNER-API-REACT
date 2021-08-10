@@ -28,9 +28,6 @@ const API_DTBASE = apiURL()
         })
     },[id, history])
 
-    
-
-
     return (
         <div>
             <div>

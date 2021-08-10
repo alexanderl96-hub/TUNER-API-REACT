@@ -11,7 +11,7 @@ export default function EditSongs(props) {
   let history = useHistory();
   // const [valt, setValt] = useState([])
 
-  const [songs, setSongs] = useState({
+  const [song, setSong] = useState({
     name: "",
     artist: "",
     album: "",
@@ -23,16 +23,17 @@ export default function EditSongs(props) {
 
   const handleInput = (e) => {
     const { value } = e.target;
-    setSongs({ ...songs, [e.target.id]: value });
+    setSong({ ...song, [e.target.id]: value });
   };
 
   const handleCheck = () => {
-    setSongs({ ...songs, is_favorite: !songs.is_favorite });
+    setSong({ ...song, is_favorite: !song.is_favorite });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.updatedSongs(songs, id);
+    console.log("test");
+    props.updatedSong(song, id);
     history.push("/songs");
   };
 
@@ -41,7 +42,7 @@ export default function EditSongs(props) {
       .get(`${API_DTBASE}/songs/${id}`)
       .then((res) => {
         const { data } = res;
-        setSongs(data);
+        setSong(data);
       })
       .catch(() => {
         history.push("/not-found");
@@ -61,7 +62,7 @@ export default function EditSongs(props) {
               id="name"
               type="text"
               onChange={handleInput}
-              value={songs.name}
+              value={song.name}
               className="editform"
             ></input>
             <label htmlFor="artist">Artist:</label>
@@ -69,7 +70,7 @@ export default function EditSongs(props) {
               id="artist"
               type="text"
               onChange={handleInput}
-              value={songs.artist}
+              value={song.artist}
               className="editform"
             ></input>
             <label htmlFor="album">Album:</label>
@@ -77,7 +78,7 @@ export default function EditSongs(props) {
               id="album"
               type="text"
               onChange={handleInput}
-              value={songs.album}
+              value={song.album}
               className="editform"
             ></input>
             <label htmlFor="photo">Photo:</label>
@@ -85,7 +86,7 @@ export default function EditSongs(props) {
               id="photo"
               type="text"
               onChange={handleInput}
-              value={songs.photo}
+              value={song.photo}
               className="editform"
             ></input>
             <label htmlFor="time">Time:</label>
@@ -93,7 +94,7 @@ export default function EditSongs(props) {
               id="time"
               type="text"
               onChange={handleInput}
-              value={songs.time}
+              value={song.time}
               className="editform"
             ></input>
             <label htmlFor="mp3">Mp3:</label>
@@ -101,7 +102,7 @@ export default function EditSongs(props) {
               id="mp3"
               type="text"
               onChange={handleInput}
-              value={songs.mp3}
+              value={song.mp3}
               className="editform"
             ></input>
             <label htmlFor="is_favorite">Favorite:</label>
@@ -109,15 +110,17 @@ export default function EditSongs(props) {
               id="is_favorite"
               type="checkbox"
               onChange={handleCheck}
-              value={songs.is_favorite}
+              value={song.is_favorite}
               className="editform"
             ></input>
-            <button type="submit" className="editformbt">New</button>
+            <button type="submit" className="editformbt">
+              New
+            </button>
           </form>
           <div className="songs_photo">
             <img
-              src={songs.photo ? songs.photo : null}
-              alt={songs.photo}
+              src={song.photo ? song.photo : null}
+              alt={song.photo}
               style={{ width: "350px", height: "320px" }}
               className="photo"
             />
