@@ -55,6 +55,7 @@ function App() {
   }, []);
   console.log(songs)
 
+
   useEffect(()=>{
     axios.get(`${API_DTBASE}/videos`).then((res)=>{
       const {data} = res
@@ -94,7 +95,7 @@ function App() {
               <Lyric song={songs} />
             </Route>
             <Route exact path="/videos">
-              <Video />
+              <Video video={video}/>
             </Route>
             <Route exact path="*">
               <Four0Four />
