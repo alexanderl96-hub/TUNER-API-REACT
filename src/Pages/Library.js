@@ -14,14 +14,58 @@ export default function Library({ song }) {
       <Link to={`/lyrics`} className="Mus-Vid">
         <button className="Mus-Vid">Lyrics</button>
       </Link>
-      <h2>Library</h2>
-      <section>
+      <section className="MinMax">
+        <h1>Albums</h1>
         <article>
           {song.map((songs) => {
             return <MapingLibrary song={songs} id={songs.id} key={songs.id} />;
           })}
         </article>
       </section>
+
+      <section className="MinMax">
+        <h1>Recent Songs</h1>
+        <article>
+          {song.map((songs) => {
+            return <MapingLibrary song={songs} id={songs.id} key={songs.id} />;
+          })}
+        </article>
+      </section>
+      <section className="MinMax">
+        <h1>Favorite</h1>
+        <article>
+          {song.map((songs) => {
+            return <MapingLibrary song={songs} id={songs.id} key={songs.id} />;
+          })}
+        </article>
+      </section>
+
+      <section className="MinMax">
+        <h1>Songs</h1>
+        <article>
+          {song.map((songs) => {
+            return <MapingLibrary song={songs} id={songs.id} key={songs.id} />;
+          })}
+        </article>
+      </section>
+      <section className="MinMax">
+        <h1>More Popular</h1>
+        <article>
+          {song.map((songs) => {
+            return <MapingLibrary song={songs} id={songs.id} key={songs.id} />;
+          })}
+        </article>
+      </section>
+
+      <section className="MinMax2">
+        <h1>Musical Genre</h1>
+        <article>
+          {song.map((songs) => {
+            return <MapingLibrary song={songs} id={songs.id} key={songs.id} />;
+          })}
+        </article>
+      </section>
+
     </div>
   );
 }

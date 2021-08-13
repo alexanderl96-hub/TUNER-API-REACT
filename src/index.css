@@ -181,7 +181,7 @@ button[type="submit"] {
   flex-direction: row;
   justify-content: space-evenly;
   margin-left: -60px;
- cursor: pointer;
+  cursor: pointer;
 }
 .create:hover {
   background-color: rgba(169, 169, 169, 0.208);
@@ -203,3 +203,45 @@ form label {
 .editformbt {
   margin-right: 25px;
 }
+.MinMax {
+  overflow: scroll;
+  background-color: blanchedalmond;
+}
+.MinMax article{
+  display: flex;
+ flex-direction: row;
+}
+.MinMax h1{
+  font-size: 28px;
+}
+.dentro{
+  margin:15px;
+}
+.productCard {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 129, 220);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px -1px rgba(0, 0, 0, 0.9);
+}
+.productCard h2 {
+  font-size: 25px;
+  margin: 10px;
+}
+.MinMax2 {
+  overflow: scroll;
+  background-color: blanchedalmond;
+}
+.MinMax2 article{
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+.MinMax2 h1{
+  font-size: 28px;
+}
+
