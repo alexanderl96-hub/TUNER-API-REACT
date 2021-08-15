@@ -18,7 +18,13 @@ code {
   padding: 15px;
   margin-top: -60px;
   word-wrap: break-word;
-  background:linear-gradient(white, gray, black ) 
+  background:linear-gradient(white, #808080, black ) ;
+}
+.Bar{
+  text-decoration: none;
+}
+.Bar2{
+  color: white ;
 }
 .home_btn {
   margin: auto;

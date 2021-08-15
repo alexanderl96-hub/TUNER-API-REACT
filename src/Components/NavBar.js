@@ -5,7 +5,7 @@ export default function NavBar() {
     return (
         <div className="navBar">
             <h2>
-                <Link to="/"><h1><span>🎼 </span>Tones</h1></Link>
+                <Link to="/" className="Bar"><h1 className="Bar2"><span>🎼</span>Tones</h1></Link>
             </h2>
             
             <Link to="/songs/new">
