@@ -7,7 +7,7 @@ import Playlist from "../Components/Playlist";
 
 export default function Index({ songs }) {
   return (
-    <div className="index">
+    <div className="container">
       <div className="playlist">
         <Link to={`/songs`} className="Mus-Vid">
           <button className="Mus-Vid">Musica </button>

@@ -4,7 +4,7 @@ import MapingLibrary from "../Library Component/MapingLibrary";
 
 export default function Library({ song }) {
   return (
-    <div>
+    <div className="container">
       <Link to={`/songs`} className="Mus-Vid">
         <button className="Mus-Vid">Musica </button>
       </Link>

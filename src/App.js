@@ -24,6 +24,7 @@ const API_DTBASE = apiURL();
 function App() {
   const [songs, setSongs] = useState([]);
   const [video, setVideo] = useState([]);
+  const [lyric, setLyric]= useState([])
 
   const updatedSong = (updateSong, id) => {
     axios.put(`${API_DTBASE}/songs/${id}`, updateSong).then(
@@ -53,7 +54,7 @@ function App() {
       setSongs(data);
     });
   }, []);
-  console.log(songs)
+  
 
 
   useEffect(()=>{
@@ -62,7 +63,14 @@ function App() {
       setVideo(data)
     })
   },[])
-  console.log(video, " en viedo")
+  
+
+  useEffect(() => {
+    axios.get(`${API_DTBASE}/lyrics`).then((res) =>{
+      const { data } = res
+      setLyric(data)
+    })
+  })
 
   return (
     <div className="App">
@@ -92,7 +100,7 @@ function App() {
               <Library song={songs} />
             </Route>
             <Route exact path="/lyrics">
-              <Lyric song={songs} />
+              <Lyric lyric={lyric} />
             </Route>
             <Route exact path="/videos">
               <Video video={video}/>

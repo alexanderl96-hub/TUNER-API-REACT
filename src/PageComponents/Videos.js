@@ -8,7 +8,7 @@ export default function Videos({ video }) {
       <Link to={`/songs`} className="Mus-Vid">
         <button className="Mus-Vid">Musica </button>
       </Link>
-      <Link to={`/video`} className="Mus-Vid">
+      <Link to={`/videos`} className="Mus-Vid">
         <button className="Mus-Vid">Video</button>
       </Link>
       <Link to={`/lyrics`} className="Mus-Vid">
