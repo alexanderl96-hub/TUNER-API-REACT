@@ -18,13 +18,13 @@ code {
   padding: 15px;
   margin-top: -60px;
   word-wrap: break-word;
-  background:linear-gradient(white, #808080, black ) ;
+  background: linear-gradient(#ffffff, #808080, #000000);
 }
-.Bar{
+.Bar {
   text-decoration: none;
 }
-.Bar2{
-  color: white ;
+.Bar2 {
+  color: white;
 }
 .home_btn {
   margin: auto;
@@ -112,7 +112,7 @@ button[type="submit"] {
   font-size: 20px;
   margin-top: 110px;
 }
-.container{
+.container {
   background-color: black;
 }
 .titulos {
@@ -213,20 +213,19 @@ form label {
 .MinMax {
   overflow: scroll;
   /* background-color: blanchedalmond; */
-  background:linear-gradient(#8C3636, #6d73b8);
-  
+  background: linear-gradient(#8c3636, #6d73b8);
 }
-.MinMax article{
+.MinMax article {
   display: flex;
- flex-direction: row;
- margin-bottom: 15px;
+  flex-direction: row;
+  margin-bottom: 15px;
 }
-.MinMax h1{
+.MinMax h1 {
   font-size: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.dentro{
-  margin:15px;
+.dentro {
+  margin: 15px;
 }
 .productCard {
   width: 350px;
@@ -235,7 +234,7 @@ form label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #446FD5;
+  background-color: #446fd5;
   border-radius: 5px;
   box-shadow: 0 5px 15px -1px rgba(0, 0, 0, 0.9);
   color: #040404;
@@ -247,20 +246,55 @@ form label {
 .MinMax2 {
   overflow: scroll;
   /* background-color: blanchedalmond; */
-  background:linear-gradient(#8C3636, #6d73b8);
+  background: linear-gradient(#8c3636, #6d73b8);
 }
-.MinMax2 article{
+.MinMax2 article {
   display: flex;
- flex-wrap: wrap;
- justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.MinMax2 h1{
+.MinMax2 h1 {
   font-size: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.Lyric{
-  background-color: tan;
-  width: 1200px;
-  height: 800px;
-  justify-content:center;
+.Lyric {
+  background-color: #8f6b38;
+  width: 300px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 10px;
 }
+.Lyric:hover{
+  background-color: #8f6b38;
+  width: 900px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.Lyric p {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.Lyric p:hover{
+  margin-left: 175px;
+  margin-right: 175px;
+  font-size: 33px;
+}
+.Lyric h1 {
+  color: #ffffff;
+  margin: 1px;
+  font-size: 20px;
+}
+.Lyric h1:hover{
+  color: #ffffff;
+  margin: 8px;
+  font-size: 30px;
+}
+.tbodyLyric {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+

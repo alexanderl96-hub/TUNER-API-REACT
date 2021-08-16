@@ -7,9 +7,9 @@ export default function Lyrics({ lyrics }) {
 
   return (
     <div >
-      <tbody>
-        {lyrics.map((lert) => {
-          return <MapingLyric lyric={lert} id={lert.id} key={lert.id} />;
+      <tbody className="tbodyLyric">
+        {lyrics.map((alert) => {
+          return <MapingLyric lyric={alert} id={alert.id} key={alert.id} />;
         })}
       </tbody>
     </div>
