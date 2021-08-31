@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {useEffect, useState} from 'react'
-import {Link,useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import axios from "axios"
 import {apiURL} from "../Back-end/apiURl"
 

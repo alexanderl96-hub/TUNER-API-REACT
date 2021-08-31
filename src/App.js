@@ -16,6 +16,7 @@ import Play from "./Pages/Play";
 import Four0Four from "./Pages/Four0Four";
 import Library from "./Pages/Library";
 import Lyric from "./Pages/Lyric";
+import WholeAlbum from "./Pages/WholeAlbum";
 
 import Video from "./PageComponents/Videos";
 
@@ -24,7 +25,8 @@ const API_DTBASE = apiURL();
 function App() {
   const [songs, setSongs] = useState([]);
   const [video, setVideo] = useState([]);
-  const [lyric, setLyric]= useState([])
+  const [lyric, setLyric]= useState([]);
+  const [albums , setalbums] = useState([]);
 
   const updatedSong = (updateSong, id) => {
     axios.put(`${API_DTBASE}/songs/${id}`, updateSong).then(
@@ -55,8 +57,6 @@ function App() {
     });
   }, []);
   
-
-
   useEffect(()=>{
     axios.get(`${API_DTBASE}/videos`).then((res)=>{
       const {data} = res
@@ -69,6 +69,13 @@ function App() {
     axios.get(`${API_DTBASE}/lyrics`).then((res) =>{
       const { data } = res
       setLyric(data)
+    })
+  })
+
+  useEffect(() => {
+    axios.get(`${API_DTBASE}/Albums`).then((res) =>{
+      const { data } = res
+      setalbums(data)
     })
   })
 
@@ -97,7 +104,10 @@ function App() {
               <Play song={songs} />
             </Route>
             <Route exact path="/library">
-              <Library song={songs} />
+              <Library albums={albums} song={songs} />
+            </Route>
+            <Route exact path="/library/:id">
+              <Library albums={albums} song={songs} />
             </Route>
             <Route exact path="/lyrics">
               <Lyric lyric={lyric} />
