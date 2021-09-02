@@ -232,6 +232,18 @@ form label {
 .dentro {
   margin: 15px;
 }
+.productCard h4{
+  padding: 5px;
+}
+.image{
+  border-radius:5px;
+  margin-top: -8px;
+}
+.artist{
+  border-radius:5px;
+  width: 350px;
+  height: 400px;
+}
 .productCard {
   width: 350px;
   height: 400px;
@@ -243,6 +255,33 @@ form label {
   border-radius: 5px;
   box-shadow: 0 5px 15px -1px rgba(0, 0, 0, 0.9);
   color: #040404;
+}
+.productCarded {
+  width: 350px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px -1px rgba(0, 0, 0, 0.9);
+} 
+.productCard h3{
+  color: white;
+}
+.gen{
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.gen h2{
+ color:white;
+ margin-top: -100px;
+ margin-left: -130px;
+}
+.gen h3{
+  color:white;
+  font-size: 23px;
+ margin-top: -100px;
+ margin-left: -70px;
 }
 .productCard h2 {
   font-size: 25px;

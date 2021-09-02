@@ -27,6 +27,8 @@ function App() {
   const [video, setVideo] = useState([]);
   const [lyric, setLyric]= useState([]);
   const [albums , setalbums] = useState([]);
+  const [artist, setArtist] = useState([]);
+  const [genre, setGenre] = useState([]);
 
   const updatedSong = (updateSong, id) => {
     axios.put(`${API_DTBASE}/songs/${id}`, updateSong).then(
@@ -79,6 +81,20 @@ function App() {
     })
   })
 
+  useEffect(() => {
+    axios.get(`${API_DTBASE}/artist`).then((res) =>{
+      const { data } = res
+      setArtist(data)
+    })
+  })
+
+  useEffect(() => {
+    axios.get(`${API_DTBASE}/genre`).then((res) =>{
+      const { data } = res
+      setGenre(data)
+    })
+  }) 
+
   return (
     <div className="App">
       <Router>
@@ -104,7 +120,7 @@ function App() {
               <Play song={songs} />
             </Route>
             <Route exact path="/library">
-              <Library albums={albums} song={songs} />
+              <Library albums={albums} song={songs}  artist={artist} genre={genre} />
             </Route>
             <Route exact path="/library/:id">
               <Library albums={albums} song={songs} />

@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MapingLibrary from "../Library Component/MapingLibrary";
 import MapingAlbum from "../Library Component/MapingAlbum";
+import MapingFavorite from '../Library Component/MapingFavorite';
+import MapingArtist from "../Library Component/MapingArtist";
+import MapingGenre from "../Library Component/MapingGenre"
 
-export default function Library({ albums, song }) {
+export default function Library({ albums, song , artist, genre}) {
   return (
     <div className="container">
       <Link to={`/songs`} className="Mus-Vid">
@@ -52,7 +55,7 @@ export default function Library({ albums, song }) {
           <article>
             {song.map((songs) => {
               return (
-                <MapingLibrary song={songs} id={songs.id} key={songs.id} />
+                <MapingFavorite song={songs} id={songs.id} key={songs.id} />
               );
             })}
           </article>
@@ -63,9 +66,9 @@ export default function Library({ albums, song }) {
         <h1>Artist</h1>
         <section className="MinMax">
           <article>
-            {song.map((songs) => {
+            {artist.map((art) => {
               return (
-                <MapingLibrary song={songs} id={songs.id} key={songs.id} />
+                <MapingArtist artis={art} id={art.id} key={art.id} />
               );
             })}
           </article>
@@ -73,7 +76,7 @@ export default function Library({ albums, song }) {
       </div>
 
       <div className="MinMax3">
-        <h1>More Popular</h1>
+        <h1>Trending now</h1>
         <section className="MinMax">
           <article>
             {song.map((songs) => {
@@ -89,9 +92,9 @@ export default function Library({ albums, song }) {
         <h1>Musical Genre</h1>
         <section className="MinMax2">
           <article>
-            {song.map((songs) => {
+            {genre.map((gen) => {
               return (
-                <MapingLibrary song={songs} id={songs.id} key={songs.id} />
+                <MapingGenre genr={gen} id={gen.id} key={gen.id} />
               );
             })}
           </article>
