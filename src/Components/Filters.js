@@ -5,7 +5,6 @@ import Table from "react-bootstrap/Table";
 export default function Filters({ songs }) {
   return (
     <div className="table">
-      {/* <h3>Todas mis canciones</h3> */}
       <section>
         <Table bordered hover>
           <thead>

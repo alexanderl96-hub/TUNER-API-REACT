@@ -178,8 +178,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://image.shutterstock.com/image-photo/disco-260nw-233693152.jpg "
+              alt="Disco"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -193,8 +193,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="http://arthouse.cat/wp-content/uploads/2020/12/musica-house-300x219.jpg"
+              alt="house"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -208,8 +208,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://previews.123rf.com/images/monsitj/monsitj1410/monsitj141000009/32372003-headphone-dj-turntable-techno-background-vector-illustration-for-techno-dance-music.jpg"
+              alt="techno"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -224,8 +224,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTglgXZfmJDabET5YqaeXlaRr98IOOTm8f-pQ&usqp=CAU"
+              alt="pop"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -240,8 +240,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf9cRINKM-0l4eTdn8jzSI0Ld3OOPFiZBUYg&usqp=CAU"
+              alt="ska"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -255,8 +255,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mq3opYm9bDA3XPn_C-DYgA7pE5JV9ykv6A&usqp=CAU"
+              alt="Reggae"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -271,8 +271,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlD5gbFlx8ArJ4ICQ9aB5DDcDdl6E5utKy4w&usqp=CAU"
+              alt="Drum and Bass"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -287,8 +287,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://lh3.googleusercontent.com/proxy/JBBZhH7_FEO76B6dQJlhWffzNXH95I25z-QS9CrKSIHsEBlt3bsMiN_V40iPJdqkEDxdVENh_PHERtZYKX_Ig4RNmpodKFlltBD-zzR0KCoTfpXh_pgtyp8G5TZVp4g"
+              alt="garage"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -303,8 +303,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.18169-9/cp0/e15/q65/c15.0.64.64a/p64x64/418846_508669025857997_88821126_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=1YJfo5q8KocAX-9Dw0s&_nc_ht=scontent-lga3-1.xx&oh=86ef0a28541b3f9fedd9e79bd078eacf&oe=615C8B48"
+              alt="Flamenco"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -320,8 +320,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKlNqQWr_wFBEdHadN45oPJ7SZuYTZvtvdjQ&usqp=CAU"
+              alt="salsa"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -336,8 +336,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm2-GDbydZ_YO5ihy8mB-4sQzVB29NMxctBw&usqp=CAU"
+              alt="Timba"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -352,8 +352,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0nzRZXXcoO1rGOA78V2iKv-VsTtyWea1yg&usqp=CAU"
+              alt="hip-hop"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -368,8 +368,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1BD65jeWCjFkiSRpWbylupzkIDpO5tFaCw&usqp=CAU"
+              alt="Reggaeton"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -384,8 +384,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyDuo59gG-3sY1NwL4A2Rkh1ajf2R7K978iQ&usqp=CAU"
+              alt="Vocal"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -400,8 +400,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/c/1/4/9/e848-e603-4eff-8d2f-e2da114c0a8e.jpg"
+              alt="Instrumental"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -416,8 +416,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://m.media-amazon.com/images/I/611B2uuMkcL._SS500_.jpg"
+              alt="Pragmatic"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -432,8 +432,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://cdn.trendhunterstatic.com/phpthumbnails/36/36546/36546_1_800.jpeg"
+              alt="Furniture"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -448,8 +448,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsUEe367gH2mqrhRqqJ3EhFDi0rCJ_8GPXmA&usqp=CAU"
+              alt="Soundtrack"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -464,8 +464,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://images-na.ssl-images-amazon.com/images/I/81TlECjMN5L._SX522_.jpg"
+              alt="Rumba"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -480,8 +480,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Iron_bells.JPG/150px-Iron_bells.JPG"
+              alt="Yoruba"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -496,8 +496,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://39zsbo2fj4og6a79534grq31-wpengine.netdna-ssl.com/wp-content/uploads/Depositphotos_74762549_xl-2015.jpg"
+              alt="Chachacha"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -512,8 +512,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://blog.xcaret.com/es/wp-content/uploads/2019/05/Portada-1-1280x640.jpg"
+              alt="Son"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -528,8 +528,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://reporter.rit.edu:8443/sites/pubDir/slideShow/10-14/301-791-988998152.jpg"
+              alt="Kizomba"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -544,8 +544,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkR8D8nJjjxqy1q5UdgQlPgRSMi6VP4xSGsw&usqp=CAU"
+              alt="Bachata"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -560,8 +560,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://lh3.googleusercontent.com/plkQVBm2a0UAXfBsvsLgB2cXvnwQEFa3Tfr9vhi5gDbF1v7fJurrl-ZckLjqbvbLJ8E=w200"
+              alt="Merengue"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>
@@ -576,8 +576,8 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src=""
-              alt=""
+              src="https://www.goandance.com/es/media/images-manager/Blog/pareja-bailando-tango-canciones.jpg"
+              alt="Tango"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
             <div>

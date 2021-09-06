@@ -274,14 +274,15 @@ form label {
 }
 .gen h2{
  color:white;
+ font-size: 28px;
  margin-top: -100px;
- margin-left: -130px;
+ margin-left: -110px;
 }
 .gen h3{
   color:white;
-  font-size: 23px;
+  font-size: 26px;
  margin-top: -100px;
- margin-left: -70px;
+ margin-left: -30px;
 }
 .productCard h2 {
   font-size: 25px;
@@ -341,4 +342,70 @@ form label {
   flex-direction: row;
   justify-content: space-evenly;
 }
+.container-Art{
+  background-color: #000000;
+}
+.band{
+  display: flex; 
+  flex-direction: column;
+  color: #ffffff;
+}
+.band1{
+/* color: white; */
+}
+.band2{
+  display: flex; 
+  flex-direction: row;
+  justify-content:space-around;
+}
+.middle{
+  display: flex;
+  flex-direction: column;
+}
+.band3{
+  width: 700px;
+  height: 300px;
+  overflow-y: scroll;
+  border-radius:3px;
+  ;
+  
+}
+.band3::-webkit-scrollbar{
+  display: none;
+}
+.band3 h5{
+  font-size:20px;
+  margin-top: 10px;
+  text-align: justify;
+  padding: 8px;
+  box-shadow: inset 0px 0px 30px 10px gray;
+  
+}
 
+.container-down{
+  /* margin-top: 400px;
+  margin-right: 600px; */
+}
+.origBorn{
+  display:flex;
+  flex-direction: row;
+
+}
+.origBorn p{
+  font-size:18px;
+  margin-top: 15px;
+  padding: 5px;
+}
+.band4 p{
+  font-size:20px;
+}
+.band5{
+  display: flex; 
+  flex-direction: row;
+  margin-left: 20px;;
+}
+.band5 p{
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 10px;
+}

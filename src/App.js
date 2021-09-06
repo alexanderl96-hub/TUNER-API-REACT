@@ -17,6 +17,8 @@ import Four0Four from "./Pages/Four0Four";
 import Library from "./Pages/Library";
 import Lyric from "./Pages/Lyric";
 import WholeAlbum from "./Pages/WholeAlbum";
+import Artist from "./Pages/artist";
+import Members from "./Pages/Members";
 
 import Video from "./PageComponents/Videos";
 
@@ -130,6 +132,12 @@ function App() {
             </Route>
             <Route exact path="/videos">
               <Video video={video}/>
+            </Route>
+            <Route exact path="/artist">
+              <Artist artist={artist}/>
+            </Route>
+            <Route exact path="/artist/members">
+              <Members />
             </Route>
             <Route exact path="*">
               <Four0Four />
