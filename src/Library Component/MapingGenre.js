@@ -136,7 +136,7 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src="https://image.shutterstock.com/image-vector/disgusting-horror-art-nightmare-seamless-260nw-1008032752.jpg"
+              src="https://i.imgur.com/G9hSgXC.png"
               alt="Hadcore punk"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
@@ -178,7 +178,7 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src="https://image.shutterstock.com/image-photo/disco-260nw-233693152.jpg "
+              src="https://i.imgur.com/I8cLIfi.png"
               alt="Disco"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
@@ -416,7 +416,7 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src="https://m.media-amazon.com/images/I/611B2uuMkcL._SS500_.jpg"
+              src="https://i.imgur.com/UePDDmx.png"
               alt="Pragmatic"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
@@ -560,7 +560,7 @@ export default function MapingGenre({ genr }) {
         <div className="productCarded">
           <div>
             <img
-              src="https://lh3.googleusercontent.com/plkQVBm2a0UAXfBsvsLgB2cXvnwQEFa3Tfr9vhi5gDbF1v7fJurrl-ZckLjqbvbLJ8E=w200"
+              src="https://i.imgur.com/eFj3CZu.png"
               alt="Merengue"
               style={{ width: "350px", height: "400px", borderRadius: "5px" }}
             />
