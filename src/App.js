@@ -96,7 +96,7 @@ function App() {
       setGenre(data)
     })
   }) 
-
+  
   return (
     <div className="App">
       <Router>

@@ -13,13 +13,12 @@ export default function MapingAlbum({ album, id , covers}) {
         <img
           src= {album.covers}
           alt={album.name}
-          style={{ width: "230px", height: "200px" }}
+          style={{ width: "350px", height: "290px" }}
         /> : <img
         src= {image}
         alt='new'
-        style={{ width: "230px", height: "200px" }}
+        style={{ width: "350px", height: "290px" }}
       />}
-        <h2>Year-release</h2>
         <h2>{album.years}</h2>
       </div>
     </div>

@@ -8,10 +8,9 @@ export default function MapingLibrary({ song, id  }) {
         <img
           src={song.photo} 
           alt={song.artist}
-          style={{ width: "200px", height: "170px" }}
+          style={{ width: "350px", height: "290px" }}
         />
         <h2>{song.artist}</h2>
-        <h2>Year-release</h2>
       </div>
     </div>
   );

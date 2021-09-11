@@ -8,10 +8,10 @@ export default function MapingFavorite({ song }) {
           <img
             src={song.photo}
             alt={song.artist}
-            style={{ width: "350px", height: "330px" }}
-            className= "image"
+            style={{ width: "350px", height: "350px" }}
+            className="image"
           />
-          <h4>{song.artist}</h4>
+          <h2>{song.name}</h2>
         </div>
       ) : null}
     </div>
