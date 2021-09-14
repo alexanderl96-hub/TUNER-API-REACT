@@ -1,0 +1,22 @@
+.audioPlayer {
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+  justify-content: center;
+  margin-left: 200px;
+  flex-wrap: wrap;
+}
+.audioPlayer div {
+  color: white;
+}
+.countCurrent {
+  margin-top: 2.8vh;
+  margin-right: -10px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.fullCount {
+  margin-top: 2.8vh;
+  margin-left: 10px;
+  font-size: 20px;
+}
